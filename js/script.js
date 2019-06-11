@@ -29,6 +29,7 @@ var quotes = [
 
 
 /*** Create the getRandomQuote function which will hold a variable to get a random number. 
+ Create a variable to generate a random number.
  Make sure the limit is set to how many quotes there are. 
  Then, return a random quote from the quotes array.***/
 
