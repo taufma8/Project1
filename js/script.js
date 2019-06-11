@@ -75,7 +75,6 @@ function printQuote() {
     /*** Find the div tag for id quote-box in the index file. 
      Set the property to innerHTML. And equal it to your HTML string.
      See on console if it works. 
-     Use the load quote code provided in the instructions. 
      ***/
     document.getElementById('quote-box').innerHTML = htmlString;
   }
@@ -84,4 +83,19 @@ console.log(printQuote());
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
+/* Create a function to randomize the background color of the webpage. 
+Create a variable that will hold the 'red' random color code.
+Create a variable that will hold the 'blue' random color code.
+Create a variable that will hold the 'green' random color code.
+Then use javascript DOM, target the body and change the style (background color) and set it to equal to a string that holds the red, green, blue variables. 
+     Use the load quote code provided in the instructions. 
+ */
 
+function changeBackgroundColor () {
+  var red = Math.floor(Math.random() * 256);
+  var blue = Math.floor(Math.random() * 256);
+  var green = Math.floor(Math.random() * 256);
+  document.body.style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue +')';
+}
+
+document.getElementById('loadQuote').addEventListener("click", changeBackgroundColor, false);
